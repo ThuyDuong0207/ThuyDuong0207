@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng ký</title>
+</head>
+<body>
+    <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 350px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px; 
+      box-sizing: border-box;
+    }
+
+    .gender-group {
+      margin-bottom: 15px;
+    }
+
+    .gender-group label {
+      font-weight: normal;
+      margin-right: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #45af48;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #52c455; 
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Đăng Ký Thông Tin</h1>
+    <form>
+      <label for="name">Họ và Tên</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Số Điện Thoại</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <div class="gender-group">
+        <label>Giới Tính:</label>
+        <input type="radio" id="male" name="gender" value="Nam">
+        <label for="male">Nam</label>
+        <input type="radio" id="female" name="gender" value="Nữ">
+        <label for="female">Nữ</label>
+      </div>
+
+      <button type="submit">Gửi Thông Tin</button>
+    </form>
+  </div>
+</body>
+</html>
