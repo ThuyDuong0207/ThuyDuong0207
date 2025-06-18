@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư viện ảnh đơn giản</title>
+    <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      max-width: 800px;
+      margin: 30px auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+    <h2>Thư viện ảnh của tôi</h2>
+
+  <div class="gallery">
+    <img src="https://picsum.photos/200?text=Ảnh+1" alt="Ảnh 1">
+    <img src="https://picsum.photos/id/237/200/300?text=Ảnh+2" alt="Ảnh 2">
+    <img src="https://picsum.photos/200/300/?blur=2?text=Ảnh+3" alt="Ảnh 3">
+    <img src="https://picsum.photos/200/300?grayscale?text=Ảnh+4" alt="Ảnh 4">
+    <img src="https://picsum.photos/200/300/?blur?text=Ảnh+5" alt="Ảnh 5">
+    <img src="https://picsum.photos/id/870/200/300?grayscale&blur=2?text=Ảnh+6" alt="Ảnh 6">
+  </div>
+</body>
+</html>
