@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khảo sát ý kiến</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fc;
+      padding: 40px;
+    }
+
+    form {
+      background: #fff;
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 10px;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+     <form>
+    <h2>Khảo Sát Ý Kiến Người Dùng</h2>
+
+    <label>Bạn hài lòng với dịch vụ của chúng tôi không?</label>
+    <input type="radio" name="satisfaction" value="yes"> Hài lòng
+    <input type="radio" name="satisfaction" value="no"> Không hài lòng
+
+    <label>Những tính năng bạn quan tâm:</label>
+    <input type="checkbox" name="features" value="ui"> Giao diện dễ dùng<br>
+    <input type="checkbox" name="features" value="speed"> Tốc độ nhanh<br>
+    <input type="checkbox" name="features" value="support"> Hỗ trợ khách hàng<br>
+
+    <label>Bạn biết đến chúng tôi qua đâu?</label>
+    <select name="source">
+      <option value="facebook">Facebook</option>
+      <option value="google">Google</option>
+      <option value="friend">Bạn bè giới thiệu</option>
+      <option value="other">Khác</option>
+    </select>
+
+    <label>Ý kiến đóng góp thêm:</label>
+    <textarea name="feedback" rows="4" placeholder="Hãy chia sẻ suy nghĩ của bạn..."></textarea>
+
+    <button type="submit">Gửi khảo sát</button>
+  </form>
+</body>
+</html>
