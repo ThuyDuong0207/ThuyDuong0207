@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio cá nhân</title>
+    <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #f8f8f8;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 20px 0 10px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      background-color: #fff;
+    }
+
+    .project {
+      background-color: #f3f3f3;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 16px rgba(0,0,0,0.1);
+    }
+
+    .project img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 20px;
+    }
+
+    .project-content h3 {
+      margin-top: 0;
+      color: #444;
+    }
+
+    .project-content p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+    <header>
+    <img src="https://picsum.photos/200" alt="Ảnh đại diện">
+    <h1>Trần Thị Thùy Dương</h1>
+    <p>Chuyên viên Thương mại Điện tử</p>
+  </header>
+
+  <section class="projects">
+    <div class="project">
+      <img src="https://picsum.photos/400/200?random=1" alt="Dự án 1">
+      <div class="project-content">
+        <h3>Dự án Landing Page</h3>
+        <p>Thiết kế giao diện website sản phẩm với hiệu ứng mượt mà, responsive và tương thích đa nền tảng.</p>
+      </div>
+    </div>
+    <div class="project">
+      <img src="https://picsum.photos/400/200?random=2" alt="Dự án 2">
+      <div class="project-content">
+        <h3>Dự án Portfolio</h3>
+        <p>Xây dựng portfolio cá nhân sử dụng HTML, CSS, hiệu ứng hover và chia lưới linh hoạt.</p>
+      </div>
+    </div>
+    <div class="project">
+      <img src="https://picsum.photos/400/200?random=3" alt="Dự án 3">
+      <div class="project-content">
+        <h3>Website Blog</h3>
+        <p>Blog cá nhân với hệ thống bài viết, phân loại chuyên mục, tích hợp bình luận cơ bản.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
