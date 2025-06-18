@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form khảo sát ý kiến</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      padding: 30px;
+    }
+
+    .survey-form {
+      background: #fff;
+      max-width: 600px;
+      margin: auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .survey-form h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .survey-form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .survey-form input[type="radio"],
+    .survey-form input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+    }
+
+    .survey-form textarea {
+      width: 100%;
+      height: 100px;
+      margin-top: 8px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: vertical;
+    }
+
+    .survey-form .section {
+      margin-bottom: 25px;
+    }
+
+    .survey-form button {
+      padding: 12px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .survey-form button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+    <form class="survey-form">
+    <h2>Khảo Sát Ý Kiến Người Dùng</h2>
+
+    <div class="section">
+      <label>Bạn đánh giá chất lượng dịch vụ như thế nào?</label>
+      <label><input type="radio" name="danhgia" value="tuyetvoi"> Tuyệt vời</label>
+      <label><input type="radio" name="danhgia" value="tot"> Tốt</label>
+      <label><input type="radio" name="danhgia" value="trungbinh"> Trung bình</label>
+      <label><input type="radio" name="danhgia" value="kem"> Kém</label>
+    </div>
+
+    <div class="section">
+      <label>Bạn quan tâm đến các tính năng nào? (chọn nhiều)</label>
+      <label><input type="checkbox" name="tinh-nang" value="giaotiep"> Giao tiếp</label>
+      <label><input type="checkbox" name="tinh-nang" value="tienich"> Tiện ích</label>
+      <label><input type="checkbox" name="tinh-nang" value="giaodien"> Giao diện</label>
+      <label><input type="checkbox" name="tinh-nang" value="baomat"> Bảo mật</label>
+    </div>
+
+    <div class="section">
+      <label>Ý kiến hoặc góp ý của bạn:</label>
+      <textarea placeholder="Nhập nội dung tại đây..."></textarea>
+    </div>
+
+    <div style="text-align:center;">
+      <button type="submit">Gửi phản hồi</button>
+    </div>
+  </form>
+</body>
+</html>
