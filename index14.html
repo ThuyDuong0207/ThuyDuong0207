@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phản Hồi Khách Hàng</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f5;
+      display: flex;
+      justify-content: center;
+      padding: 50px;
+    }
+    form {
+      background-color: #fff;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      width: 360px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 12px;
+      margin-bottom: 5px;
+    }
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #43a047;
+    }
+  </style>
+</head>
+<body>
+    <form>
+    <h2>Phản Hồi Khách Hàng</h2>
+
+    <label for="rating">Đánh giá (1–5 sao):</label>
+    <select id="rating" name="rating" required>
+      <option value="">-- Chọn số sao --</option>
+      <option value="1">★☆☆☆☆ - Rất tệ</option>
+      <option value="2">★★☆☆☆ - Tệ</option>
+      <option value="3">★★★☆☆ - Bình thường</option>
+      <option value="4">★★★★☆ - Tốt</option>
+      <option value="5">★★★★★ - Rất tốt</option>
+    </select>
+
+    <label for="feedback">Ý kiến của bạn:</label>
+    <textarea id="feedback" name="feedback" rows="4" placeholder="Hãy cho chúng tôi biết trải nghiệm của bạn..." required></textarea>
+
+    <label for="email">Email liên hệ (tùy chọn):</label>
+    <input type="email" id="email" name="email" placeholder="example@email.com">
+
+    <button type="submit">Gửi Phản Hồi</button>
+  </form>
+
+</body>
+</html>
