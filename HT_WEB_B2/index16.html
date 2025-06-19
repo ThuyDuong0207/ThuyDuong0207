@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Bán Hàng - Điện Thoại</title>
+     <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2c3e50;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+      font-size: 18px;
+      margin: 10px 0 5px;
+      color: #333;
+    }
+
+    .product-card p {
+      font-size: 16px;
+      color: #27ae60;
+      margin: 0 0 15px;
+    }
+
+    .product-card button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .product-card button:hover {
+      background-color: #1e80c1;
+    }
+  </style>
+</head>
+<body>
+    <h1>Điện Thoại Mới Nhất</h1>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://picsum.photos/200" alt="iPhone 15 Plus">
+      <h3>iPhone 15 Plus</h3>
+      <p>26.990.000₫</p>
+      <button>Mua ngay</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://picsum.photos/id/237/200/300" alt="Samsung S24 Ultra">
+      <h3>Samsung S24 Ultra</h3>
+      <p>33.990.000₫</p>
+      <button>Mua ngay</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://picsum.photos/seed/picsum/200/300" alt="Xiaomi 14">
+      <h3>Xiaomi 14</h3>
+      <p>19.990.000₫</p>
+      <button>Mua ngay</button>
+    </div>
+  </div>
+</body>
+</html>
