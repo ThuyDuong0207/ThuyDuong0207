@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đặt Bàn Quán Ăn</title>
+    <style>
+    body {
+      background-color: #fefefe;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .booking-form {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .booking-form h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .booking-form label {
+      display: block;
+      margin-bottom: 6px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    .booking-form button {
+      width: 100%;
+      padding: 12px;
+      background-color: #27ae60;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .booking-form button:hover {
+      background-color: #219150;
+    }
+  </style>
+</head>
+<body>
+    <form class="booking-form">
+    <h2>Đặt Bàn Quán Ăn</h2>
+
+    <label for="date">Ngày đặt:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Giờ đặt:</label>
+    <input type="time" id="time" name="time" required>
+
+    <label for="people">Số người:</label>
+    <input type="number" id="people" name="people" min="1" max="30" required>
+
+    <label for="note">Yêu cầu đặc biệt:</label>
+    <textarea id="note" name="note" rows="3" placeholder="Ví dụ: gần cửa sổ, bàn riêng..."></textarea>
+
+    <button type="submit">Đặt Bàn</button>
+  </form>
+</body>
+</html>
