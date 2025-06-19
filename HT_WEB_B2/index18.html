@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin Tức Mới Nhất</title>
+    <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .news-container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .news-item {
+      background: #fff;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .news-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s;
+    }
+
+    .news-img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    .news-title {
+      font-size: 24px;
+      color: #2c3e50;
+      margin-top: 15px;
+    }
+
+    .news-summary {
+      font-size: 16px;
+      color: #555;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+    <div class="news-container">
+    <div class="news-item">
+      <img class="news-img" src="https://picsum.photos/200" alt="Hình ảnh tin tức">
+      <div class="news-title">Việt Nam đạt kỷ lục khách du lịch quốc tế trong năm 2025</div>
+      <div class="news-summary">
+        Ngành du lịch Việt Nam đang phục hồi mạnh mẽ, đón hơn 18 triệu lượt khách quốc tế trong nửa đầu năm 2025, vượt mọi kỳ vọng từ trước đến nay.
+      </div>
+    </div>
+
+    <div class="news-item">
+      <img class="news-img" src="https://picsum.photos/seed/picsum/200/300" alt="Tin công nghệ">
+      <div class="news-title">Việt Nam thử nghiệm mạng 6G đầu tiên tại Hà Nội</div>
+      <div class="news-summary">
+        Bộ Thông tin & Truyền thông xác nhận đang phối hợp với các nhà mạng triển khai thử nghiệm mạng 6G tại khu vực trung tâm thủ đô Hà Nội.
+      </div>
+    </div>
+</body>
+</html>
