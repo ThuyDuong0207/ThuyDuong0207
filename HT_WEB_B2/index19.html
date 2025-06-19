@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch Sự Kiện</title>
+    <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fc;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    .event-list {
+      max-width: 800px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .event {
+      background-color: #ffffff;
+      border-left: 6px solid #3498db;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      transition: 0.3s;
+    }
+
+    .event h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #2c3e50;
+    }
+
+    .event .date {
+      font-weight: bold;
+      color: #2980b9;
+      margin-bottom: 8px;
+    }
+
+    .event p {
+      margin: 0;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .event.upcoming {
+      border-left-color: #e74c3c;
+      background-color: #fff9f7;
+      box-shadow: 0 0 0 3px #fce9e7;
+    }
+
+    .event[data-day="monday"]   { border-left-color: #1abc9c; }
+    .event[data-day="tuesday"]  { border-left-color: #9b59b6; }
+    .event[data-day="wednesday"] { border-left-color: #f39c12; }
+    .event[data-day="friday"]   { border-left-color: #2ecc71; }
+  </style>
+</head>
+<body>
+     <h1>Lịch Sự Kiện Tháng 6</h1>
+
+  <div class="event-list">
+
+    <div class="event" data-day="monday">
+      <div class="date">Thứ 2 - 17/06/2025</div>
+      <h3>Khởi động Tuần Lễ Sách</h3>
+      <p>Hội sách lớn nhất năm tại Công viên Văn Lang, với hơn 50 gian hàng và buổi giao lưu tác giả.</p>
+    </div>
+
+    <div class="event upcoming" data-day="wednesday">
+      <div class="date">Thứ 4 - 19/06/2025</div>
+      <h3>Chương Trình Âm Nhạc Acoustic</h3>
+      <p>Đêm nhạc ngoài trời với sự tham gia của các ca sĩ trẻ. Vào cửa miễn phí, bắt đầu lúc 18h30 tại Nhà Văn Hóa Thanh Niên.</p>
+    </div>
+
+    <div class="event" data-day="friday">
+      <div class="date">Thứ 6 - 21/06/2025</div>
+      <h3>Workshop Nhiếp Ảnh Đường Phố</h3>
+      <p>Hướng dẫn kỹ thuật chụp ảnh đường phố cùng nhiếp ảnh gia Trần Bảo tại Saigon Creative Hub.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
